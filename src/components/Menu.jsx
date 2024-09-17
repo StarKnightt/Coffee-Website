@@ -22,7 +22,7 @@ function Menu() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl font-bold text-center mb-16 text-blue-400"
+          className="text-5xl font-bold text-center mb-16 text-orange-400"
         >
           Innovative Brews
         </motion.h2>
@@ -34,10 +34,10 @@ function Menu() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
-              className="bg-gray-900 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 border border-blue-500"
+              className="bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 border border-orange-500"
             >
               <img src={item.image} alt={item.name} className="w-full h-48 object-cover mb-4 rounded" />
-              <h3 className="text-2xl font-semibold mb-3 text-blue-300">{item.name}</h3>
+              <h3 className="text-2xl font-semibold mb-3 text-orange-300">{item.name}</h3>
               <p className="text-blue-400 font-bold text-xl mb-3">{item.price}</p>
               <p className="text-gray-400">{item.description}</p>
             </motion.div>
