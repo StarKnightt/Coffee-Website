@@ -12,7 +12,7 @@ function Gallery() {
     }, []);
   
     return (
-      <section id="gallery" className="py-20 bg-brown-800">
+      <section id="gallery" className="py-20 bg-orange-800">
         <div className="container mx-auto">
           <motion.h2 
             initial={{ opacity: 0, y: 50 }}

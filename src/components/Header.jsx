@@ -21,7 +21,7 @@ function Header() {
     >
       <nav className="container mx-auto flex justify-between items-center py-4 px-6">
         <motion.h1 
-          className="text-3xl font-bold text-blue-400"
+          className="text-3xl font-bold text-orange-400"
           whileHover={{ scale: 1.1 }}
         >
           Quantum Coffee
@@ -29,7 +29,7 @@ function Header() {
         <ul className="flex space-x-6">
           {['Menu', 'Experience', 'Testimonials'].map((item) => (
             <motion.li key={item} whileHover={{ scale: 1.1 }}>
-              <a href={`#${item.toLowerCase()}`} className="text-blue-200 hover:text-blue-400 transition duration-300">
+              <a href={`#${item.toLowerCase()}`} className="text-orange-200 hover:text-orange-400 transition duration-300">
                 {item}
               </a>
             </motion.li>
