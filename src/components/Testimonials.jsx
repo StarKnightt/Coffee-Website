@@ -15,7 +15,7 @@ function Testimonials() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl font-bold text-center mb-16 text-blue-400"
+          className="text-5xl font-bold text-center mb-16 text-orange-400"
         >
           Intergalactic Reviews
         </motion.h2>
@@ -26,7 +26,7 @@ function Testimonials() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-gray-900 p-8 rounded-lg shadow-lg border border-blue-500"
+              className="bg-gray-900 p-8 rounded-lg shadow-lg border border-orange-500"
             >
               <p className="text-lg mb-4 italic text-gray-300">"{testimonial.text}"</p>
               <p className="text-blue-400 font-semibold">- {testimonial.name}</p>

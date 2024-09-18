@@ -6,6 +6,7 @@ import Experience from './components/Experience';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
+import About from './components/About';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -22,6 +23,7 @@ function App() {
       <Hero />
       <Menu />
       <Experience />
+      <About />
       <Testimonials />
       <Footer />
     </div>

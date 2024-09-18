@@ -9,7 +9,7 @@ function Footer() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold mb-6 text-blue-400"
+          className="text-3xl font-bold mb-6 text-orange-400"
         >
           Quantum Coffee
         </motion.h2>
@@ -35,9 +35,9 @@ function Footer() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="flex justify-center space-x-6 mb-8"
         >
-          <a href="#" className="hover:text-blue-400 transition duration-300">Holo-gram</a>
-          <a href="#" className="hover:text-blue-400 transition duration-300">Quantum-link</a>
-          <a href="#" className="hover:text-blue-400 transition duration-300">Nexus</a>
+          <a href="#" className="hover:text-orange-400 transition duration-300">Holo-gram</a>
+          <a href="#" className="hover:text-orange-400 transition duration-300">Quantum-link</a>
+          <a href="#" className="hover:text-orange-400 transition duration-300">Nexus</a>
         </motion.div>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}

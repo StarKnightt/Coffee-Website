@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 function About() {
   return (
-    <section id="about" className="py-20 bg-amber-50">
+    <section id="about" className="py-20 bg-gray-800">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
