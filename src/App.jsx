@@ -7,26 +7,38 @@ import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
 import About from './components/About';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000);
+    setTimeout(() => setLoading(false), 3000);
   }, []);
 
-  if (loading) return <Loader />;
-
   return (
-    <div className="font-sans bg-gray-900 text-white">
-      <Header />
-      <Hero />
-      <Menu />
-      <Experience />
-      <About />
-      <Testimonials />
-      <Footer />
-    </div>
+    <AnimatePresence>
+      {loading ? (
+        <Loader key="loader" />
+      ) : (
+        <motion.div
+          key="app"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          className="font-sans bg-gray-900 text-white"
+        >
+          <Header />
+          <Hero />
+          <Menu />
+          <Experience />
+          <About />
+          <Testimonials />
+          <Footer />
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
 

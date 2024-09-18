@@ -10,20 +10,33 @@ function Loader() {
       className="fixed inset-0 flex items-center justify-center bg-black"
     >
       <motion.div
-        animate={{ 
-          scale: [1, 2, 2, 1, 1],
-          rotate: [0, 0, 270, 270, 0],
-          borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-        }}
-        transition={{ 
-          duration: 2,
-          ease: "easeInOut",
-          times: [0, 0.2, 0.5, 0.8, 1],
-          repeat: Infinity,
-          repeatDelay: 1
-        }}
-        className="w-16 h-16 bg-orange-500"
-      />
+        className="relative w-24 h-24"
+        animate={{ rotate: 360 }}
+        transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+      >
+        <motion.div
+          className="absolute top-0 left-0 right-0 bottom-0 border-4 border-orange-500 rounded-full"
+          animate={{ scale: [1, 1.2, 1] }}
+          transition={{ duration: 1, repeat: Infinity }}
+        />
+        <motion.div
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-orange-500 rounded-full"
+          animate={{ scale: [0.8, 1, 0.8] }}
+          transition={{ duration: 1, repeat: Infinity }}
+        />
+        <motion.div
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"
+          animate={{ scale: [1, 0.8, 1] }}
+          transition={{ duration: 1, repeat: Infinity }}
+        />
+      </motion.div>
+      <motion.p
+        className="absolute bottom-10 text-orange-500 text-2xl font-bold"
+        animate={{ opacity: [0, 1, 0] }}
+        transition={{ duration: 2, repeat: Infinity }}
+      >
+        Brewing Experience...
+      </motion.p>
     </motion.div>
   );
 }

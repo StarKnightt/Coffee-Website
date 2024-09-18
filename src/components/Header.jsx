@@ -27,7 +27,7 @@ function Header() {
           Quantum Coffee
         </motion.h1>
         <ul className="flex space-x-6">
-          {['Menu', 'Experience', 'Testimonials','Gallery','About'].map((item) => (
+          {['Menu', 'Experience', 'Testimonials','About'].map((item) => (
             <motion.li key={item} whileHover={{ scale: 1.1 }}>
               <a href={`#${item.toLowerCase()}`} className="text-orange-200 hover:text-orange-400 transition duration-300">
                 {item}
