@@ -13,7 +13,7 @@ function Loader() {
       <div className="absolute inset-0 z-0">
         <img
           src="/images/coffee-gif.gif"
-          alt="Coffee Background"
+          alt="wait"
           className="w-full h-full object-cover"
         />
       </div>
