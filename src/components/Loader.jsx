@@ -7,35 +7,30 @@ function Loader() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 flex items-center justify-center bg-black"
+      className="fixed inset-0 flex flex-col items-center justify-center overflow-hidden"
     >
-      <motion.div
-        className="relative w-24 h-24"
-        animate={{ rotate: 360 }}
-        transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-      >
-        <motion.div
-          className="absolute top-0 left-0 right-0 bottom-0 border-4 border-orange-500 rounded-full"
-          animate={{ scale: [1, 1.2, 1] }}
-          transition={{ duration: 1, repeat: Infinity }}
+      {/* High-resolution background GIF */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/images/coffee-gif.gif"
+          alt="Coffee Background"
+          className="w-full h-full object-cover"
         />
-        <motion.div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-orange-500 rounded-full"
-          animate={{ scale: [0.8, 1, 0.8] }}
-          transition={{ duration: 1, repeat: Infinity }}
-        />
-        <motion.div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full"
-          animate={{ scale: [1, 0.8, 1] }}
-          transition={{ duration: 1, repeat: Infinity }}
-        />
-      </motion.div>
+      </div>
+
+      {/* Animated text */}
       <motion.p
-        className="absolute bottom-10 text-orange-500 text-2xl font-bold"
-        animate={{ opacity: [0, 1, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
+        className="relative z-10 text-black text-3xl font-bold mt-auto px-4 text-center"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ 
+          duration: 0.5, 
+          repeat: Infinity, 
+          repeatType: "reverse", 
+          repeatDelay: 1 
+        }}
       >
-        Brewing Experience...
+        Brewing the experience...
       </motion.p>
     </motion.div>
   );
