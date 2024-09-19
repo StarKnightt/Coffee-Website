@@ -66,7 +66,7 @@ function Hero() {
       </AnimatePresence>
 
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-center px-4 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl z-10">
+        <div className="text-center px-4 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl ">
           <h2 className="hero-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 sm:mb-3 md:mb-4 text-orange-400 drop-shadow-lg leading-tight">
             Experience Coffee Evolution
           </h2>
