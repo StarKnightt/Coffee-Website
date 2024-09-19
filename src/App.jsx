@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Loader from './components/Loader';
 import About from './components/About';
 import { motion, AnimatePresence } from 'framer-motion';
+import './App.css'; 
 
 function App() {
   const [loading, setLoading] = useState(true);

@@ -4,7 +4,6 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 function Hero() {
   const [currentImage, setCurrentImage] = useState(0);
-
   const images = [
     '/images/hero-background.jpg',
     '/images/coffee3.jpg',
@@ -29,7 +28,6 @@ function Hero() {
           filter: 'brightness(0.4)',
         }}
       />
-
       {/* Navigation Arrows */}
       <button
         onClick={prevImage}
@@ -43,13 +41,12 @@ function Hero() {
       >
         <ChevronRight size={24} />
       </button>
-
       <div className="text-center px-4 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
         <motion.h2
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 sm:mb-4 md:mb-6 text-orange-400 drop-shadow-lg leading-tight"
+          className="hero-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 sm:mb-4 md:mb-6 text-orange-400 drop-shadow-lg leading-tight"
         >
           Experience Coffee Evolution
         </motion.h2>
@@ -57,7 +54,7 @@ function Hero() {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
-          className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-5 sm:mb-6 md:mb-8 text-orange-200 drop-shadow-md"
+          className="hero-subtitle text-lg sm:text-xl md:text-2xl lg:text-3xl mb-5 sm:mb-6 md:mb-8 text-orange-200 drop-shadow-md"
         >
           Where science meets flavor
         </motion.p>
@@ -68,7 +65,7 @@ function Hero() {
           transition={{ delay: 0.9, duration: 0.5 }}
           whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(249, 115, 22, 0.7)" }}
           whileTap={{ scale: 0.95 }}
-          className="bg-orange-600 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full text-base sm:text-lg md:text-xl font-semibold hover:bg-orange-700 transition duration-300 inline-block"
+          className="hero-cta bg-orange-600 text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-full text-base sm:text-lg md:text-xl font-semibold hover:bg-orange-700 transition duration-300 inline-block"
         >
           Explore Our Innovations
         </motion.a>
