@@ -19,7 +19,7 @@ function Header() {
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 100 }}
       className={`fixed w-full z-10 transition-all duration-300 ${
-        isScrolled ? 'bg-black bg-opacity-80 backdrop-blur-md' : 'bg-transparent'
+        isScrolled ? 'bg-transparent bg-opacity-80 backdrop-blur-md' : 'bg-transparent'
       }`}
     >
       <nav className="max-w-full px-4 sm:px-6 flex justify-between items-center py-4">
