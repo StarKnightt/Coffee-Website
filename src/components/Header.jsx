@@ -72,7 +72,7 @@ function Header() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-black bg-opacity-90 backdrop-blur-md"
+            className="lg:hidden bg-transparent bg-opacity-90 backdrop-blur-md"
           >
             <ul className="flex flex-col items-center py-4">
               {menuItems.map((item) => (
