@@ -12,7 +12,7 @@ function Loader() {
       {/* High-resolution background GIF */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/coffee-gif.gif"
+          src="/images/coffee.webp"
           alt="wait"
           className="w-full h-full object-cover"
         />
