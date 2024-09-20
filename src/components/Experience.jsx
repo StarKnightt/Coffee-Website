@@ -42,17 +42,8 @@ function Experience() {
               
               <h3 className="text-2xl font-semibold mb-4 text-orange-300">{exp.title}</h3>
               <p className="text-gray-300 mb-6">{exp.description}</p>
-
-              {/* <motion.div
-                className="w-16 h-16 bg-orange-500 rounded-full absolute -bottom-8 -right-8 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                whileHover={{ scale: 1.3, rotate: 90 }}
-                transition={{ duration: 0.3 }}
-              > */}
-                {/* <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg> */}
               </motion.div>
-            // </motion.div>
+           
           ))}
         </div>
 
