@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 function Testimonials() {
   const testimonials = [
-    { name: 'Dr. Sarah Quantum', text: 'The flavor complexity in each sip is mind-bending. Its not just coffee, its an exploration of taste.', image: '/images/sarah-quantum.jpg' },
-    { name: 'Captain John Nebula', text: 'As someone whos traveled the stars, I can say this coffee truly takes you on a journey.', image: '/images/john-nebula.jpg' },
-    { name: 'Professor Emma Cortex', text: 'The neural stimulation from their brews has revolutionized my research. A triumph of coffee engineering!', image: '/images/emma-cortex.jpg' },
+    { name: 'Dr. Sarah Quantum', text: 'The flavor complexity in each sip is mind-bending. Its not just coffee, its an exploration of taste.', image: '/images/sarah-quantum.avif' },
+    { name: 'Captain John Nebula', text: 'As someone whos traveled the stars, I can say this coffee truly takes you on a journey.', image: '/images/john-nebula.avif' },
+    { name: 'Professor Emma Cortex', text: 'The neural stimulation from their brews has revolutionized my research. A triumph of coffee engineering!', image: '/images/emma-cortex.avif' },
   ];
 
   return (
