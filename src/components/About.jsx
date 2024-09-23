@@ -11,7 +11,7 @@ function About() {
           transition={{ duration: 0.5 }}
           className="md:w-1/2 mb-8 md:mb-0"
         >
-          <img src="/images/coffee2.jpg" alt="Vintage coffee shop" className="rounded-lg shadow-lg" />
+          <img src="/images/coffee2.avif" alt="Vintage coffee shop" className="rounded-lg shadow-lg" />
         </motion.div>
         <motion.div 
           initial={{ opacity: 0, x: 50 }}
