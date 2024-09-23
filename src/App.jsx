@@ -5,7 +5,7 @@ import Menu from './components/Menu';
 import Experience from './components/Experience';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
-// import Loader from './components/Loader';
+import Loader from './components/Loader';
 import About from './components/About';
 import { motion, AnimatePresence } from 'framer-motion';
 import './App.css'; 
