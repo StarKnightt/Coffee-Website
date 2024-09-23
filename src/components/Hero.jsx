@@ -5,10 +5,10 @@ function Hero() {
   const [currentImage, setCurrentImage] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const images = [
-    '/images/hero-background.jpg',
-    '/images/coffee3.jpg',
-    '/images/hero-bg-3.jpg',
-    '/images/coffee4.jpg',
+    '/images/hero-background.avif',
+    '/images/coffee3.avif',
+    '/images/hero-bg-3.avif',
+    '/images/coffee4.avif',
   ];
 
   useEffect(() => {
