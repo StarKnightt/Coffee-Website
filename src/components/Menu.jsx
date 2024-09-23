@@ -5,12 +5,12 @@ function Menu() {
   const [selectedItem, setSelectedItem] = useState(null);
 
   const menuItems = [
-    { name: 'Quantum Espresso', price: '$5.50', description: 'Superposition of flavors in every sip', image: '/images/quantum-espresso.jpg' },
-    { name: 'Nebula Nitro Cold Brew', price: '$6.50', description: 'Infused with star-dusted cream', image: '/images/nebula-cold-brew.jpg' },
-    { name: 'Holographic Latte', price: '$7.00', description: 'Shifting flavors as you drink', image: '/images/holographic-latte.jpg' },
-    { name: 'Time Warp Macchiato', price: '$6.00', description: 'Tastes like the future, feels like the past', image: '/images/time-warp-macchiato.jpg' },
-    { name: 'Plasma Mocha Fusion', price: '$7.50', description: 'Energized with chocolate plasma swirls', image: '/images/plasma-mocha.jpg' },
-    { name: 'Zero-G Affogato', price: '$8.75', description: 'Ice cream that defies gravity', image: '/images/zero-g-affogato.jpg' },
+    { name: 'Quantum Espresso', price: '$5.50', description: 'Superposition of flavors in every sip', image: '/images/quantum-espresso.avif' },
+    { name: 'Nebula Nitro Cold Brew', price: '$6.50', description: 'Infused with star-dusted cream', image: '/images/nebula-cold-brew.avif' },
+    { name: 'Holographic Latte', price: '$7.00', description: 'Shifting flavors as you drink', image: '/images/holographic-latte.avif' },
+    { name: 'Time Warp Macchiato', price: '$6.00', description: 'Tastes like the future, feels like the past', image: '/images/time-warp-macchiato.avif' },
+    { name: 'Plasma Mocha Fusion', price: '$7.50', description: 'Energized with chocolate plasma swirls', image: '/images/plasma-mocha.avif' },
+    { name: 'Zero-G Affogato', price: '$8.75', description: 'Ice cream that defies gravity', image: '/images/zero-g-affogato.avif' },
   ];
 
   return (
