@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const IMAGES = [
-  '/images/hero-background.webp', // Convert to WebP format if possible
+  '/images/hero-background.webp',
   '/images/coffee3.webp',
   '/images/hero-bg-3.webp',
   '/images/coffee4.webp',
@@ -93,9 +93,8 @@ const NavigationDots = React.memo(({ currentImage, setCurrentImage }) => (
         key={index}
         onClick={() => setCurrentImage(index)}
         aria-label={`Switch to image ${index + 1}`}
-        className={`w-2 h-2 rounded-full transition-all duration-300 ${
-          currentImage === index ? 'bg-orange-400 w-4' : 'bg-gray-400'
-        }`}
+        className={`w-2 h-2 rounded-full transition-all duration-300 ${currentImage === index ? 'bg-orange-400 w-4' : 'bg-gray-400'
+          }`}
       />
     ))}
   </div>
