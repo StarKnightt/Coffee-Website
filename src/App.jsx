@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Menu from './components/Menu';
-import Experience from './components/Experience';
-import Testimonials from './components/Testimonials';
-import Footer from './components/Footer';
-import About from './components/About';
 import { motion } from 'framer-motion';
-import './App.css'; 
+import './App.css';
+
+const Menu = lazy(() => import('./components/Menu'));
+const Experience = lazy(() => import('./components/Experience'));
+const Testimonials = lazy(() => import('./components/Testimonials'));
+const Footer = lazy(() => import('./components/Footer'));
+const About = lazy(() => import('./components/About'));
 
 function App() {
   return (
@@ -19,11 +20,13 @@ function App() {
     >
       <Header />
       <Hero />
-      <Menu />
-      <Experience />
-      <About />
-      <Testimonials />
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Menu />
+        <Experience />
+        <About />
+        <Testimonials />
+        <Footer />
+      </Suspense>
     </motion.div>
   );
 }
