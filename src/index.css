@@ -2,7 +2,89 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-body {
-  font-family: 'Georgia', serif;
-  overflow-x: hidden;
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply font-sans bg-white text-gray-900 overflow-x-hidden antialiased;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+  
+  /* Focus visible styles for accessibility */
+  :focus-visible {
+    @apply outline-none ring-2 ring-quantum-orange ring-offset-2 ring-offset-white rounded;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-quantum-orange rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-quantum-pink;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-quantum-orange to-quantum-pink text-white px-6 py-3 rounded-full font-semibold 
+           hover:shadow-lg hover:shadow-quantum-orange/30 transition-all duration-300 
+           focus:outline-none focus:ring-2 focus:ring-quantum-orange focus:ring-offset-2 focus:ring-offset-white;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-gray-900 px-6 py-3 rounded-full font-semibold border-2 border-gray-200
+           hover:bg-gray-50 hover:border-quantum-blue transition-all duration-300
+           focus:outline-none focus:ring-2 focus:ring-quantum-blue focus:ring-offset-2 focus:ring-offset-white;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-lg border border-gray-200 p-6 
+           hover:border-quantum-orange/50 hover:shadow-xl transition-all duration-300;
+  }
+  
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-quantum-orange via-quantum-pink to-quantum-purple;
+  }
+  
+  .section-heading {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 gradient-text;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px rgba(249, 115, 22, 0.5);
+    }
+    to {
+      box-shadow: 0 0 30px rgba(249, 115, 22, 0.8), 0 0 40px rgba(139, 92, 246, 0.4);
+    }
+  }
 }

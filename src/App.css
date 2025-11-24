@@ -1,46 +1,60 @@
+/* Additional custom styles for enhanced animations and effects */
+
 @media screen and (max-width: 768px) {
-    html, body {
-      overflow-x: hidden;
-    }
-    
-    body {
-      position: relative;
-      width: 100%;
-    }
-  
-    .container {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-  
-    /* Adjust font sizes for mobile */
-    h1, h2, h3 {
-      font-size: 90%;
-    }
-  
-    p, a {
-      font-size: 95%;
-    }
-  
-    /* Ensure images don't overflow */
-    img {
-      max-width: 100%;
-      height: auto;
-    }
+  html, body {
+    overflow-x: hidden;
   }
   
-  /* Specific adjustments for the Hero section */
-  @media screen and (max-width: 640px) {
-    .hero-title {
-      font-size: 2.5rem !important;
-    }
-  
-    .hero-subtitle {
-      font-size: 1.25rem !important;
-    }
-  
-    .hero-cta {
-      font-size: 1rem !important;
-      padding: 0.5rem 1rem !important;
-    }
+  body {
+    position: relative;
+    width: 100%;
   }
+
+  /* Ensure images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Prevent layout shift during image loading */
+img {
+  display: block;
+}
+
+/* Enhanced smooth scrolling for better UX */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .gradient-text {
+    background: none;
+    color: white;
+  }
+}
+
+/* Selection styling */
+::selection {
+  background-color: rgba(249, 115, 22, 0.3);
+  color: white;
+}
+
+::-moz-selection {
+  background-color: rgba(249, 115, 22, 0.3);
+  color: white;
+}
